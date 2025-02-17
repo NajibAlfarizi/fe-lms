@@ -1,14 +1,15 @@
 import { createBrowserRouter } from "react-router";
-import ManagerHome from "../pages/manager/home";
+import ManagerHomePage from "../pages/manager/home";
 import SignInPage from "../pages/SignIn";
 import SignUpPage from "../pages/SignUp";
 import SuccessCheckOutPage from "../pages/SuccesCheckOut";
 import LayoutDashboard from "../components/layout";
+import ManageCoursesPage from "../pages/manager/courses";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ManagerHome />,
+    element: <ManagerHomePage />,
   },
   {
     path: "/manager/sign-in",
@@ -20,18 +21,22 @@ const router = createBrowserRouter([
   },
   {
     path: "/success-checkout",
-    element: <SuccessCheckOutPage />
+    element: <SuccessCheckOutPage />,
   },
   {
-    path:"/manager",
+    path: "/manager",
     element: <LayoutDashboard />,
     children: [
       {
         index: true,
-        element: <ManagerHome />
-      }
-    ]
-  }
+        element: <ManagerHomePage />,
+      },
+      {
+        path: "/manager/courses",
+        element: <ManageCoursesPage />
+      },
+    ],
+  },
 ]);
 
 export default router;
