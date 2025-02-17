@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router";
-import ManagerHome from "../pages/ManagerHome";
+import ManagerHome from "../pages/manager/home";
 import SignInPage from "../pages/SignIn";
 import SignUpPage from "../pages/SignUp";
 import SuccessCheckOutPage from "../pages/SuccesCheckOut";
