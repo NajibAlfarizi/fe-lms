@@ -1,15 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router"
+import { RouterProvider } from "react-router"
+import router from "./router"
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div className="text-3xl text-amber-800">Hello world</div>
-  }
-])
 function App() {
 
   return (
-    <RouterProvider router={router}></RouterProvider>
+    <RouterProvider router={router} />
   )
 }
 
