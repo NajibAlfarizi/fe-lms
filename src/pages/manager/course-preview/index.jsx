@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 import ContentText from "./content-text";
 import ContentVideo from "./content-video";
