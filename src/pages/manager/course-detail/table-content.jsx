@@ -10,7 +10,7 @@ export default function TableContent() {
       <div className="header flex items-center justify-between">
         <h2 className="font-bold text-[22px] leading-[33px]">Course Content</h2>
         <Link
-          to="add-course-content.html"
+          to="/manager/courses/:id/create"
           className="w-fit rounded-full p-[14px_20px] font-semibold text-[#FFFFFF] bg-[#662FFF] text-nowrap"
         >
           Add Content
